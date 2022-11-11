@@ -4,4 +4,6 @@ This web application is designed to display the weather in real time as well as 
 
 #URL
 
-https://nicrhoda.github.io/weather/![weather_sc](https://user-images.githubusercontent.com/112894805/201444259-357c36e8-af5c-421d-af8e-898bf1c6c149.png)
+https://nicrhoda.github.io/weather/
+
+![weather_sc](https://user-images.githubusercontent.com/112894805/201444348-9bac346e-965e-401d-aff3-211c667fc4b6.png)
