@@ -5,12 +5,22 @@
     font-size: xx-large;
     background-color: #8DB5EF;
 }
-.large-current {
+/* .large-current {
     display: flex;
     float: right;
     text-align: center;
     padding: 20px;
     border: solid;
-    margin-right: 10rem;
+    margin-right: 2rem;
     width:auto;
+} */
+.city-large-elements { 
+    
+    padding-top: 2rem;
+}
+.city-large-head {
+    margin-right: 2rem;
+}
+.forecast {
+    border: solid;
 }
