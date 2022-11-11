@@ -18,15 +18,49 @@
 <header class="head row">Weather</header>
 <main>
     <section id="container" class="row">
-        <div class="left col s4">
+        <div class="col s4">
             <div class="search-title">Search for a city</div>
-            <input id="search-bar" type="text" placeholder="Enter a city here"></input>
-            <div id="saved" class="pinned">
-                
-            </div>
-
+            <input id="userInput"></input>
+            <button id="btn" type="button" class="search-button">Search</button>
+        </section>
+        </div>    
+        <div id="saved" class="col s4 right-align pinned"></div>
+        <div id="current" class="col s8 large-current">
+            <h1 id="city"></h1>
+            <p id="templarge"></p>
+            <div id="windlarge"></div>
+            <div id="humlarge"></div>
         </div>
-    </section>
+        <section class="row five-day-wrapper">
+            <div class="col" id="day1">
+                <div id="temprow"></div>
+                <div id="windrow"></div>
+                <div id="humrow"></div>
+            </div>
+            <div class="col" id="day2">
+                <div id="temprow"></div>
+                <div id="windrow"></div>
+                <div id="humrow"></div>
+            </div>
+            <div class="col" id="day3">
+                <div id="temprow"></div>
+                <div id="windrow"></div>
+                <div id="humrow"></div>
+            </div>
+            <div class="col" id="day4">
+                <div id="temprow"></div>
+                <div id="windrow"></div>
+                <div id="humrow"></div>
+            </div>
+            <div class="col" id="day5">
+                <div id="temprow"></div>
+                <div id="windrow"></div>
+                <div id="humrow"></div>
+            </div>
+        </section>    
+<footer>Weather App by Nic Rhoda</footer>
+        
+    
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

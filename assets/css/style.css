@@ -5,3 +5,12 @@
     font-size: xx-large;
     background-color: #8DB5EF;
 }
+.large-current {
+    display: flex;
+    float: right;
+    text-align: center;
+    padding: 20px;
+    border: solid;
+    margin-right: 10rem;
+    width:auto;
+}

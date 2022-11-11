@@ -1,13 +1,39 @@
-var city = $("#search-bar")
-key = "5b6aeea1e7cd821c4753182fa3b3249a"
-fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=" + key)
-.then(res => res.json())
-.then(data => console.log(data))
+// var citySearchUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city.val() + '&limit=1&units=imperial&appid=' + key;
 
-var lat = "40.5092961";
+key = "5b6aeea1e7cd821c4753182fa3b3249a";
 
-var lon = "-88.9843937";
+var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=";
+var units = "&units=Imperial&appid=";
 
-fetch("https://api.openweathermap.org/data/2.5/forecast?lat=40.5092961&lon=-88.9843937&units=Imperial&appid=5b6aeea1e7cd821c4753182fa3b3249a")
-.then(res => res.json())
-.then(data => console.log(data))
+
+
+
+
+function fetchRequest () {
+  // $('#btn').on('click', function() {
+    var city = $('#userInput').val();
+    console.log(city);
+    localStorage.setItem('city', city);
+    $('#city').text(city);
+    
+    let newQueryURL = queryURL + city + units + key; 
+    console.log(newQueryURL);
+    fetch(newQueryURL)
+    .then(function(res) {
+      return res.json();
+    })
+    .then(function(data){
+      console.log(data);
+      let temp = data.list[0].main.temp;
+      console.log(temp);
+      $('#templarge').append(temp);
+    })
+  }
+  // )}
+
+$('#btn').on('click', function() {
+  fetchRequest();
+})
+
+
+
